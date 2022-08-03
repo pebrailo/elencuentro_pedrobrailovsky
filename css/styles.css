@@ -33,9 +33,13 @@ header .buscador{
 }
 
 
-article .contactoinput{
-    display: inline-block;
+article .contactoinput , .logininput , .registerinput{
+    display: flex;
+    justify-content: center;
+
 }
+
+
 
 
 fieldset{
@@ -60,6 +64,9 @@ header img{
         margin-right: auto;
         width: 400px;
        }
+
+
+
 
 .menu li{
     display: inline-block;  
@@ -101,9 +108,14 @@ article .frutoshome{
     margin-top: 70px;
     
 }
-   
 
 
+
+
+.navaside{
+    margin: -20px;
+    overflow: hidden;
+}
 
 
 h3{
@@ -142,9 +154,9 @@ li a{
 
 p{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 30px;
-    text-align: center;
-    padding: 50px;
+    font-size: 35px;
+    text-align: left;
+    padding: 20px;
     margin: 25px;
     
 }
@@ -220,7 +232,7 @@ aside ul li {
 aside{
     background-color: #FFE080  ;
     grid-area: aside;
-    padding: 20px;
+
 }
 
 aside li a{
@@ -280,7 +292,17 @@ li{
         margin-right: 40px;
         margin-top: 70px;
     }
+
+    .logininput ,.registerinput, .contactoinput{
+        margin-left: -200px;
+    }
     
+    .login{
+        display: none
+        
+    }
+
+
     
     
     .menuProductos{
@@ -324,6 +346,8 @@ li{
         
     }
 
+    
+
 
     
     .letter{
@@ -334,13 +358,33 @@ li{
         padding: 70px;
     }
 
+    .carousel-inner{
+        height:300px
+    }
 
+    .btn{
+        background-color: #e7854d;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 7px;
+    }
 
+    .btn a{
+        color: white;
+    }
+
+    .btn:hover{
+        background-color: #e27535;
+    }
 
 }
 
 
 @media screen and (min-width: 1200px) {
+
+    .login{
+        display: show;
+    }
 
     .menu li{
         display:inline-block;  
@@ -407,6 +451,27 @@ li{
         margin-left: 25px; 
     }
     
+    .carousel-inner{
+        height: 600px;
+       }
+
+    .carouselExampleControls{
+        height: 600px;
+        width: 600px;
+    }
+
+    .logininput ,.registerinput, .contactoinput{
+        margin-left: -200px;
+    }
+
+    .login{
+        display: inline-block;
+        position: absolute;
+        margin: 5px;
+        padding: 5px;
+        top: 0;
+        right: 0;
+    }
 
 }
 
