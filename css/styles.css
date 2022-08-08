@@ -58,6 +58,8 @@ fieldset{
     font-size: 30px;
 }
 
+
+
 header img{
         display: block;
         margin-left: auto;
@@ -86,6 +88,10 @@ header img{
     padding: 20px; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 45px;
+}
+
+a:hover{
+    color: black;
 }
 
 .menu a{
@@ -265,6 +271,17 @@ li{
     list-style-type: none;
 }
 
+
+.gridTextoMain .col{
+    margin: 30px;
+    border-radius: 15px;    
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+
+
+
 /* animaciones */
 
 .menu a{
@@ -298,8 +315,7 @@ li{
     }
     
     .login{
-        display: none
-        
+        display: none 
     }
 
 
