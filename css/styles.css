@@ -1,506 +1,404 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-* {
-    box-sizing: border-box;
+
+header .buscador {
+  margin: 5px;
+  padding: 5px;
+  display: inline-block;
+  color: #483435;
+}
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
+
+.login {
+  display: inline-block;
+  position: absolute;
+  margin: 5px;
+  padding: 5px;
+  top: 0;
+  right: 0;
+}
+.login a {
+  text-align: right;
+  color: #483435;
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+  position: relative;
+  font-size: 30px;
+}
+
+article {
+  border-radius: 15px;
+  text-align: center;
+}
+article .contactoinput {
+  display: flex;
+  justify-content: center;
+}
+article .frutoshome {
+  text-align: center;
+  margin: 50px;
+}
+
+.logininput {
+  display: flex;
+  justify-content: center;
+}
+
+.registerinput {
+  display: flex;
+  justify-content: center;
+}
+
+fieldset {
+  display: inline-block;
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  position: relative;
+  left: 40%;
+  bottom: 20px;
+  text-align: center;
+}
+
+.buscador {
+  font-size: 30px;
+}
+
+.menu li {
+  display: inline-block;
+}
+.menu ul {
+  background-color: #FFE080;
+  padding: 25px;
+  margin: 20px;
+  text-align: center;
+}
+.menu a {
+  color: #f88e15;
+  text-decoration: none;
+  padding: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 45px;
+  filter: grayscale(0);
+  transform: scale(1.3);
+  transition: all 1.5s;
+}
+.menu a:hover {
+  color: #b46b16;
+}
+
+a:hover {
+  color: black;
+}
+
+.frutoshome img {
+  width: 700px;
+  margin-top: 70px;
+}
+
+.navaside {
+  margin: -20px;
+  overflow: hidden;
+}
+
+h3 {
+  font-size: 35px;
+  color: #483435;
+  text-align: center;
+  padding: 50px;
+  color: #f88e15;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 15px;
+  text-align: center;
+  padding: 15px;
+  font-size: 30px;
+}
+
+footer {
+  background-color: #ebb6a0;
+}
+
+li {
+  text-decoration: none;
+  color: #483435;
+  font-size: 25px;
+  list-style-type: none;
+}
+li a {
+  text-decoration: none;
+  color: #483435;
+  font-size: 25px;
+}
+
+.navegacionfooter {
+  display: flex;
+  display: inline-block;
+  padding: 70px;
+  margin-left: 25px;
+}
+
+p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 35px;
+  text-align: left;
+  padding: 20px;
+  margin: 25px;
+}
+
+h2 {
+  color: #f88e15;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 15px;
+  text-align: center;
+  padding: 15px;
+  font-size: 50px;
+}
+
+.menuProductos {
+  display: grid;
+}
+.menuProductos button {
+  background-color: #FFE080;
+  height: 30px;
+  width: 60px;
+}
+
+input[type=submit] {
+  background-color: #e7854d;
+  color: #ffffff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #e27535;
+}
+
+.cajas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactofooter {
+  display: inline-block;
+  padding: 70px;
+}
+
+.letter {
+  display: flex;
+  display: inline-block;
+  font-size: 25px;
+  text-align: right;
+  padding: 70px;
+}
+
+aside {
+  background-color: #FFE080;
+  grid-area: aside;
+}
+aside ul {
+  padding: 2px;
+  margin-left: 80px;
+}
+aside ul li {
+  padding: 2px;
+  margin-left: -20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+aside li a {
+  font-size: 35px;
+}
+
+section {
+  grid-area: section;
+  -moz-column-gap: 15 px;
+       column-gap: 15 px;
+  row-gap: 15px;
+  align-items: center;
+  display: grid;
+}
+
+.gridTextoMain .col {
+  margin: 30px;
+  border-radius: 15px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 320px) {
+  .menu li {
+    display: block;
   }
-
-header .buscador{
-    margin: 5px;
-    padding: 5px;
+  .lorem {
+    text-align: center;
+    font-size: 35px;
     display: inline-block;
+    padding: 18px;
+    font-family: Arial, Helvetica, sans-serif;
     color: #483435;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 70px;
+  }
+  .logininput {
+    margin-left: -200px;
+  }
+  .registerinput {
+    margin-left: -200px;
+  }
+  .contactoinput {
+    margin-left: -200px;
+  }
+  .login {
+    display: none;
+  }
+  .menuProductos {
+    grid-template-columns: auto;
+    grid-template-rows: 15% 10% auto 15%;
+    grid-template-areas: "header" "nav" "section" "footer";
+  }
+  section {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+  aside {
+    display: none;
+  }
+  footer {
+    margin-top: 500px;
+  }
+  .cajas {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  .navegacionfooter {
+    display: flexbox;
+    justify-content: center;
+    display: block;
+    padding: 70px;
+  }
+  .contactofooter {
+    display: flexbox;
+    justify-content: center;
+    display: block;
+    padding: 70px;
+  }
+  .letter {
+    display: flex;
+    display: inline-block;
+    font-size: 25px;
+    text-align: right;
+    padding: 70px;
+  }
+  .carousel-inner {
+    height: 300px;
+  }
+  .btn {
+    background-color: #e7854d;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 7px;
+  }
+  .btn a {
+    color: white;
+  }
+  .btn:hover {
+    background-color: #e27535;
+  }
 }
-
-.login{
+@media screen and (min-width: 1200px) {
+  .login {
+    display: show;
     display: inline-block;
     position: absolute;
     margin: 5px;
     padding: 5px;
     top: 0;
     right: 0;
-}
-
-.login a{   
-    text-align: right;
-    color: #483435 ;
-    text-decoration: none;
-    padding: 5px;
-    margin: 5px;
-    position: relative;
-    font-size: 30px ;
-}
-
-
-article .contactoinput , .logininput , .registerinput{
-    display: flex;
-    justify-content: center;
-
-}
-
-
-
-
-fieldset{
+  }
+  .menu li {
     display: inline-block;
-    width: 300px;
-    height: 400px;
-    margin: 10px;
-    position: relative;
-    left: 40% ;
-    bottom: 20px;
-    text-align: center;
-    
-}
-
-.buscador{
-    font-size: 30px;
-}
-
-
-
-header img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 400px;
-       }
-
-
-
-
-.menu li{
-    display: inline-block;  
-}
-
-.menu ul{
-    background-color: #FFE080    ;
-    padding: 25px;
-    margin: 20px;
-    text-align: center;
-}
-
-
-.menu a{
-    color: #f88e15;
-    text-decoration: none;
-    padding: 20px; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 45px;
-}
-
-a:hover{
-    color: black;
-}
-
-.menu a{
-    filter: grayscale(0);
-    transform: scale(1.3);
-}
-
-.menu a:hover{
-        color: #b46b16;
-}
-
-
-article .frutoshome{
-    text-align: center; 
-    margin: 50px;   
-}
-
-.frutoshome img{
-    width: 700px;
-    margin-top: 70px;
-    
-}
-
-
-
-
-.navaside{
-    margin: -20px;
-    overflow: hidden;
-}
-
-
-h3{
-    font-size: 35px;
-    color: #483435;
-    text-align: center;
-    padding: 50px;
-}
-
-
-
-footer{
-    background-color: #ebb6a0   ;
-
-}
-
-li  {
-    text-decoration: none;
-    color: #483435;
-    font-size: 25px;
-}
-
-li a{
-    text-decoration: none;
-    color: #483435;
-    font-size: 25px;
-}
-
-
-.navegacionfooter{
-    display: flex;
-    display: inline-block;
-    padding: 70px;
-    margin-left: 25px; 
-}
-
-p{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 35px;
+  }
+  .menuProductos {
+    grid-template-columns: 15% auto;
+    grid-template-rows: auto;
+    grid-template-areas: "aside section";
+  }
+  .lorem {
     text-align: left;
-    padding: 20px;
-    margin: 25px;
-    
-}
-
-
-
-
-h2{
-   color: #f88e15; 
-   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   margin:15px ;
-   text-align: center;
-   padding: 15px;
-   font-size: 50px;
-}
-
-h3{
-    color: #f88e15; 
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin:15px ;
-    text-align: center;
-    padding: 15px;
-    font-size: 30px;
-
-}
-
-.menuProductos button{
-    background-color: #FFE080 ;
-    height: 30px;
-    width: 60px;
-
-}
-
-
-input[type=submit] {
-    background-color: #e7854d;
-    color: #ffffff;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
+    font-size: 35px;
+    display: inline-block;
+    padding: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #483435;
+    margin-left: 40px;
+    margin-right: 40px;
+    -moz-column-count: 3;
+         column-count: 3;
+    margin-top: 70px;
   }
-
-  input[type=submit]:hover {
-    background-color: #e27535;
+  section {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+    row-gap: 100px;
+    margin-bottom: 50px;
   }
-
-.cajas{
+  aside {
+    display: block;
+    line-height: 80px;
+  }
+  footer {
+    margin-top: 0px;
+  }
+  .cajas {
     display: flex;
     justify-content: space-between;
-}
- 
-.contactofooter{
+  }
+  .contactofooter {
     display: inline-block;
-    padding: 70px; 
-}
-
-.letter{
+    padding: 70px;
+  }
+  .letter {
     display: flex;
     display: inline-block;
     font-size: 25px;
     text-align: right;
     padding: 70px;
-}
-
-
-aside ul li {
-    padding: 2px;
-    margin-left: -20px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-aside{
-    background-color: #FFE080  ;
-    grid-area: aside;
-
-}
-
-aside li a{
-    font-size: 35px;
-}
-
-aside ul{
-    padding: 2px;
-    margin-left: 80px;
-}
-
-
-section {
-    grid-area: section;
-    column-gap: 15 px;
-    row-gap: 15px;
-    align-items: center;
-}
-
-.menuProductos, section{
-    display: grid;
-
-}
-article {
-    border-radius: 15px;    
-    text-align: center;
-}
-
-li{
-    list-style-type: none;
-}
-
-
-.gridTextoMain .col{
-    margin: 30px;
-    border-radius: 15px;    
-    text-align: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 30px;
-}
-
-
-
-/* animaciones */
-
-.menu a{
-    transition: all 1.5s;
-}
-
-
-
-
-
-@media screen and (min-width: 320px) {
-    
-    .menu li{
-        display:block;  
-    }
-
-    .lorem{
-        text-align: center;
-        font-size: 35px;
-        display: inline-block;
-        padding: 18px;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #483435;
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 70px;
-    }
-
-    .logininput ,.registerinput, .contactoinput{
-        margin-left: -200px;
-    }
-    
-    .login{
-        display: none 
-    }
-
-
-    
-    
-    .menuProductos{
-        grid-template-columns: auto;
-        grid-template-rows: 15% 10% auto 15%;
-        grid-template-areas: "header" "nav" "section" "footer";
-    }
-    
-    section{
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(3, auto);
-    }
-    aside{
-        display: none;
-    }
-
-    footer{
-        margin-top: 500px;
-    }
-
-    .cajas{
-        display: block;
-        align-items: center;
-        text-align: center;
-    }
-
-
-    .navegacionfooter{
-        display: flexbox;
-        justify-content: center;
-        display: block;
-        padding: 70px;
-    }
-
-
-    .contactofooter{
-        display: flexbox;
-        justify-content: center;
-        display: block;
-        padding: 70px;
-        
-    }
-
-    
-
-
-    
-    .letter{
-        display: flex;
-        display: inline-block;
-        font-size: 25px;
-        text-align: right;
-        padding: 70px;
-    }
-
-    .carousel-inner{
-        height:300px
-    }
-
-    .btn{
-        background-color: #e7854d;
-        padding: 15px 20px;
-        border: none;
-        border-radius: 7px;
-    }
-
-    .btn a{
-        color: white;
-    }
-
-    .btn:hover{
-        background-color: #e27535;
-    }
-
-}
-
-
-@media screen and (min-width: 1200px) {
-
-    .login{
-        display: show;
-    }
-
-    .menu li{
-        display:inline-block;  
-    }
-
-    .menuProductos{
-        grid-template-columns: 15% auto;
-    grid-template-rows: auto;
-    grid-template-areas: "aside section" ;
-    }
-
-    .lorem{
-        text-align: left;
-        font-size: 35px;
-        display: inline-block;
-        padding: 18px;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #483435;
-        margin-left: 40px;
-        margin-right: 40px;
-        column-count: 3;
-        margin-top: 70px;
-    }
-    
-    section{
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(3, auto);
-        column-gap: 80px;
-        row-gap: 100px;
-        margin-bottom: 50px;
-    }
-
-    aside{
-        display: block;
-        line-height: 80px;
-    }
-
-    footer{
-        margin-top: 0px;
-    }
-    
-    .cajas{
-        display: flex;
-        justify-content: space-between;
-    }
-     
-    .contactofooter{
-        display: inline-block;
-        padding: 70px; 
-    }
-    
-    .letter{
-        display: flex;
-        display: inline-block;
-        font-size: 25px;
-        text-align: right;
-        padding: 70px;
-    }
-
-    .navegacionfooter{
-        display: flex;
-        display: inline-block;
-        padding: 70px;
-        margin-left: 25px; 
-    }
-    
-    .carousel-inner{
-        height: 600px;
-       }
-
-    .carouselExampleControls{
-        height: 600px;
-        width: 600px;
-    }
-
-    .logininput ,.registerinput, .contactoinput{
-        margin-left: -200px;
-    }
-
-    .login{
-        display: inline-block;
-        position: absolute;
-        margin: 5px;
-        padding: 5px;
-        top: 0;
-        right: 0;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  }
+  .navegacionfooter {
+    display: flex;
+    display: inline-block;
+    padding: 70px;
+    margin-left: 25px;
+  }
+  .carousel-inner {
+    height: 600px;
+  }
+  .carouselExampleControls {
+    height: 600px;
+    width: 600px;
+  }
+  .logininput {
+    margin-left: -200px;
+  }
+  .registerinput {
+    margin-left: -200px;
+  }
+  .contactoinput {
+    margin-left: -200px;
+  }
+}/*# sourceMappingURL=styles.css.map */
