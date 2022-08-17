@@ -1,12 +1,28 @@
+/*mapas y variables*/
+.tituloproducto1 {
+  color: #f88e15;
+}
+
+.tituloproducto2 {
+  color: #b46b16;
+}
+
+.tituloproducto3 {
+  color: #483435;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-header .buscador {
+.login a, .login, header .buscador {
   margin: 5px;
   padding: 5px;
+}
+
+header .buscador {
   display: inline-block;
   color: #483435;
 }
@@ -20,8 +36,6 @@ header img {
 .login {
   display: inline-block;
   position: absolute;
-  margin: 5px;
-  padding: 5px;
   top: 0;
   right: 0;
 }
@@ -29,8 +43,6 @@ header img {
   text-align: right;
   color: #483435;
   text-decoration: none;
-  padding: 5px;
-  margin: 5px;
   position: relative;
   font-size: 30px;
 }
@@ -88,12 +100,12 @@ fieldset {
   padding: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 45px;
-  filter: grayscale(0);
-  transform: scale(1.3);
-  transition: all 1.5s;
 }
 .menu a:hover {
   color: #b46b16;
+  font-size: 46px;
+  color: #b46b16;
+  transition: all 1s;
 }
 
 a:hover {
@@ -108,6 +120,11 @@ a:hover {
 .navaside {
   margin: -20px;
   overflow: hidden;
+}
+.navaside a:hover {
+  font-size: 46px;
+  color: #b46b16;
+  transition: all 1s;
 }
 
 h3 {

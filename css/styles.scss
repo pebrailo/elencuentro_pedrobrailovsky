@@ -1,6 +1,24 @@
 @import "colores";
 @import "tipografia";
+@import "mapasvariables";
 
+
+@mixin escalado {
+	font-size: 46px;
+	color: $color_4;
+	transition: all 1s;
+	
+}
+
+
+@if $colorTierra == "si" {
+	@for $i from 1 through 3{
+		.tituloproducto#{$i}{
+		  color: map-get( $mapaTierra, $i) ;
+		
+		}
+	}
+}
 
 
 * {
@@ -8,10 +26,17 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+
+%margins{
+	margin: 5px;
+	padding: 5px;
+}
+
+
 header {
 	.buscador {
-		margin: 5px;
-		padding: 5px;
+		@extend %margins;
 		display: inline-block;
 		color: $color_1;
 	}
@@ -25,16 +50,16 @@ header {
 .login {
 	display: inline-block;
 	position: absolute;
-	margin: 5px;
-	padding: 5px;
+	@extend %margins;
 	top: 0;
 	right: 0;
+
 	a {
+
+		@extend %margins;
 		text-align: right;
 		color: $color_1;
 		text-decoration: none;
-		padding: 5px;
-		margin: 5px;
 		position: relative;
 		font-size: 30px;
 	}
@@ -51,6 +76,8 @@ article {
 	border-radius: 15px;
 	text-align: center;
 }
+
+
 .logininput {
 	display: flex;
 	justify-content: center;
@@ -88,11 +115,10 @@ fieldset {
 		padding: 20px;
 		font-family: $font-family_1;
 		font-size: 45px;
-		filter: grayscale(0);
-		transform: scale(1.3);
-		transition: all 1.5s;
+		
 		&:hover {
 			color: $color_4;
+			@include escalado;
 		}
 	}
 }
@@ -110,6 +136,13 @@ a {
 .navaside {
 	margin: -20px;
 	overflow: hidden;
+
+	a{
+
+	&:hover{
+		@include escalado;
+	}
+	}
 }
 h3 {
 	font-size: 35px;
@@ -216,6 +249,8 @@ section {
 	row-gap: 15px;
 	align-items: center;
 	display: grid;
+
+
 }
 .gridTextoMain {
 	.col {
@@ -319,6 +354,8 @@ section {
 	}
 }
 @media screen and (min-width: 1200px) {
+
+
 	.login {
 		display: show;
 		display: inline-block;
