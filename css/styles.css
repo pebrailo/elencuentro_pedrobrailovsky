@@ -1,4 +1,3 @@
-/*mapas y variables*/
 .tituloproducto1 {
   color: #f88e15;
 }
@@ -8,6 +7,18 @@
 }
 
 .tituloproducto3 {
+  color: #483435;
+}
+
+.titulomayorista1 {
+  color: #f88e15;
+}
+
+.titulomayorista2 {
+  color: #b46b16;
+}
+
+.titulomayorista3 {
   color: #483435;
 }
 
@@ -89,22 +100,22 @@ fieldset {
   display: inline-block;
 }
 .menu ul {
-  background-color: #FFE080;
+  background-color: #f4d494;
   padding: 25px;
   margin: 20px;
   text-align: center;
 }
 .menu a {
-  color: #f88e15;
+  color: #853324;
   text-decoration: none;
   padding: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 45px;
 }
 .menu a:hover {
-  color: #b46b16;
-  font-size: 46px;
-  color: #b46b16;
+  color: #c57330;
+  font-size: 40px;
+  color: #c57330;
   transition: all 1s;
 }
 
@@ -122,9 +133,7 @@ a:hover {
   overflow: hidden;
 }
 .navaside a:hover {
-  font-size: 46px;
-  color: #b46b16;
-  transition: all 1s;
+  color: #853324;
 }
 
 h3 {
@@ -132,7 +141,7 @@ h3 {
   color: #483435;
   text-align: center;
   padding: 50px;
-  color: #f88e15;
+  color: #853324;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin: 15px;
   text-align: center;
@@ -172,7 +181,7 @@ p {
 }
 
 h2 {
-  color: #f88e15;
+  color: #853324;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin: 15px;
   text-align: center;
@@ -183,14 +192,9 @@ h2 {
 .menuProductos {
   display: grid;
 }
-.menuProductos button {
-  background-color: #FFE080;
-  height: 30px;
-  width: 60px;
-}
 
 input[type=submit] {
-  background-color: #e7854d;
+  background-color: #c57330;
   color: #ffffff;
   padding: 15px 20px;
   border: none;
@@ -198,7 +202,7 @@ input[type=submit] {
   cursor: pointer;
 }
 input[type=submit]:hover {
-  background-color: #e27535;
+  background-color: #ac7353;
 }
 
 .cajas {
@@ -220,7 +224,7 @@ input[type=submit]:hover {
 }
 
 aside {
-  background-color: #FFE080;
+  background-color: #f4d494;
   grid-area: aside;
 }
 aside ul {
@@ -243,6 +247,41 @@ section {
   row-gap: 15px;
   align-items: center;
   display: grid;
+}
+
+.botonprod1 {
+  background-color: #ebb6a0;
+  border-radius: 25px;
+  display: inline-block;
+  cursor: pointer;
+  color: #853324;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #662b27;
+}
+.botonprod1 .botonprod1:hover {
+  background-color: #c29a23;
+}
+.botonprod1 .botonprod1:active {
+  position: relative;
+  top: 1px;
+}
+
+.contenedorNueces:hover .nueces {
+  transform: scale(1.3);
+  filter: grayscale(80%);
+  transition: all 1s;
+}
+
+.contenedorNueces {
+  overflow: hidden;
+}
+
+.contenedorNueces .nueces {
+  height: 250px;
+  width: 350px;
 }
 
 .gridTextoMain .col {
@@ -326,7 +365,7 @@ section {
     height: 300px;
   }
   .btn {
-    background-color: #e7854d;
+    background-color: #c57330;
     padding: 15px 20px;
     border: none;
     border-radius: 7px;
@@ -335,7 +374,7 @@ section {
     color: white;
   }
   .btn:hover {
-    background-color: #e27535;
+    background-color: #ac7353;
   }
 }
 @media screen and (min-width: 1200px) {

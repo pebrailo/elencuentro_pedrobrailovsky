@@ -4,7 +4,7 @@
 
 
 @mixin escalado {
-	font-size: 46px;
+	font-size: 40px;
 	color: $color_4;
 	transition: all 1s;
 	
@@ -14,6 +14,15 @@
 @if $colorTierra == "si" {
 	@for $i from 1 through 3{
 		.tituloproducto#{$i}{
+		  color: map-get( $mapaTierra, $i) ;
+		
+		}
+	}
+}
+
+@if $colorTierra == "si" {
+	@for $i from 1 through 3{
+		.titulomayorista#{$i}{
 		  color: map-get( $mapaTierra, $i) ;
 		
 		}
@@ -30,7 +39,7 @@
 
 %margins{
 	margin: 5px;
-	padding: 5px;
+	padding: 5px
 }
 
 
@@ -104,7 +113,7 @@ fieldset {
 		display: inline-block;
 	}
 	ul {
-		background-color: $background-color_1;
+		background-color: $background-color_6;
 		padding: 25px;
 		margin: 20px;
 		text-align: center;
@@ -140,7 +149,7 @@ a {
 	a{
 
 	&:hover{
-		@include escalado;
+		color: $color_2;
 	}
 	}
 }
@@ -192,13 +201,11 @@ h2 {
 	font-size: 50px;
 }
 .menuProductos {
-	button {
-		background-color: $background-color_1;
-		height: 30px;
-		width: 60px;
-	}
+	
 	display: grid;
 }
+
+
 input[type=submit] {
 	background-color: $background-color_3;
 	color: $color_5;
@@ -235,7 +242,7 @@ aside {
 		padding: 2px;
 		margin-left: 80px;
 	}
-	background-color: $background-color_1;
+	background-color: $background-color_6;
 	grid-area: aside;
 	li {
 		a {
@@ -249,9 +256,47 @@ section {
 	row-gap: 15px;
 	align-items: center;
 	display: grid;
-
-
 }
+
+.botonprod1 {
+	background-color:$background-color_2;
+	-webkit-border-radius:25px;
+	-moz-border-radius:25px;
+	border-radius:25px;
+	display:inline-block;
+	cursor:pointer;
+	color:$color_2;
+	font-family:Arial;
+	font-size:17px;
+	padding:15px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #662b27;
+
+	.botonprod1:hover {
+		background-color:#c29a23;
+	}
+	.botonprod1:active {
+		position:relative;
+		top:1px;
+	}
+	
+}
+
+
+.contenedorNueces:hover .nueces {
+	-webkit-transform:scale(1.3);
+	transform:scale(1.3);
+	filter: grayscale(80%); 
+	transition: all 1s;}
+.contenedorNueces {overflow:hidden;}
+
+.contenedorNueces {
+	.nueces{
+		height: 250px;
+		width: 350px;
+	}
+}
+
 .gridTextoMain {
 	.col {
 		margin: 15px;
