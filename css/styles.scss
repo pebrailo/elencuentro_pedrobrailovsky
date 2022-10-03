@@ -290,12 +290,7 @@ section {
 	transition: all 1s;}
 .contenedorNueces {overflow:hidden;}
 
-.contenedorNueces {
-	.nueces{
-		height: 250px;
-		width: 350px;
-	}
-}
+
 
 .gridTextoMain {
 	.col {
@@ -354,6 +349,19 @@ section {
 	}
 	aside {
 		display: none;
+	}
+	.contenedorNueces:hover .nueces {
+		-webkit-transform:scale(1);
+		transform:scale(1);
+		filter: grayscale(80%); 
+		transition: all 1s;
+	}
+
+	.contenedorNueces {
+		.nueces{
+			height: 130px;
+			width: 45%;
+		}
 	}
 	footer {
 		margin-top: 500px;
@@ -420,6 +428,14 @@ section {
 		grid-template-rows: auto;
 		grid-template-areas: "aside section";
 	}
+
+	.contenedorNueces {
+		.nueces{
+			height: 250px;
+			width: 350px;
+		}
+	}
+
 	.lorem {
 		text-align: left;
 		font-size: 35px;

@@ -279,11 +279,6 @@ section {
   overflow: hidden;
 }
 
-.contenedorNueces .nueces {
-  height: 250px;
-  width: 350px;
-}
-
 .gridTextoMain .col {
   margin: 15px;
   border-radius: 15px;
@@ -333,6 +328,15 @@ section {
   }
   aside {
     display: none;
+  }
+  .contenedorNueces:hover .nueces {
+    transform: scale(1);
+    filter: grayscale(80%);
+    transition: all 1s;
+  }
+  .contenedorNueces .nueces {
+    height: 130px;
+    width: 45%;
   }
   footer {
     margin-top: 500px;
@@ -394,6 +398,10 @@ section {
     grid-template-columns: 15% auto;
     grid-template-rows: auto;
     grid-template-areas: "aside section";
+  }
+  .contenedorNueces .nueces {
+    height: 250px;
+    width: 350px;
   }
   .lorem {
     text-align: left;
