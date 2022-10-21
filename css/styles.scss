@@ -405,9 +405,26 @@ section {
 			background-color: $background-color_4;
 		}
 	}
+
+	article{
+		.articlequienessomos{
+			img{
+				visibility: hidden;
+			}
+		}
+	}
+
 }
 @media screen and (min-width: 1200px) {
 
+
+	article{
+		.articlequienessomos{
+			img{
+				visibility: visible;
+			}
+		}
+	}
 
 	.login {
 		display: show;
